@@ -1,0 +1,324 @@
+/* index */
+
+.logo{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.navbar-nav{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.navbar-nav a{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: #FEB900;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav a:hover::after{
+    visibility: visible;
+    width: 100%;
+}
+
+.carousel-caption{
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 40px;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel-caption span{
+    font-size: 60px;
+    color: #FEB900;
+}
+
+.slide:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #01889F;
+    opacity: 0.3;
+}
+
+.carousel-inner .carousel-caption span:after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 4px;
+    background: #FEB900;
+    margin: auto;
+}
+
+.services{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.info{
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    color: #fff;
+}   
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.services-list .grid{
+    background: #01889F;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 1s, transform 0.5s;
+}
+
+.services-list p{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.services-list .grid a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list .grid:hover{
+    background: #4169E1;
+    transform: translateY(10px);
+}
+
+.grid p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    color: #fff;
+}
+
+#services{
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container h1:after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 4px;
+    background: #FEB900;
+    margin: auto;
+}
+
+.container-fluid img{
+    height: 40px;
+}
+
+.desc p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+}
+
+.desc input{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.desc p{
+    text-align: justify;
+
+}
+
+.text-uppercase{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+
+.list{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* about */
+
+.header-prod img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.header-prod h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #fff;
+
+}
+
+.header-prod h1:after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 165px;
+    height: 4px;
+    background: #FEB900;
+    margin: auto;
+}
+
+.first p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.first h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.g-4 .card:hover{
+    transform: translateY(10px);
+}
+
+/* client */
+
+.header-client img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.header-client h1:after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 180px;
+    height: 4px;
+    background: #FEB900;
+    margin: auto;
+}
+
+.header-client h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.client p{
+    text-align: justify;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.client h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), #01889F);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0, 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.col-md-6 .card:hover{
+    transform: scale(1.1);
+}
+
+.col-md-6:hover .layer{
+    height: 100%;
+}
+
+.layer p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    text-align: justify;
+}
+
+/* Contact */
+
+.header-contact p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.header-contact h1{
+    font-family: "Roboto",sans-serif;
+    font-weight: 900;
+}
+
+.header-contact h3{
+    font-family: "Roboto",sans-serif;
+    font-weight: 900;
+}
